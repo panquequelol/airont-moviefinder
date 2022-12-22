@@ -1,4 +1,4 @@
-export default interface Movie {
+export interface Movie {
   adult: boolean;
   backdrop_path: string;
   genre_ids: number[];
@@ -13,4 +13,9 @@ export default interface Movie {
   video: boolean;
   vote_average: number;
   vote_count: number;
+}
+
+export interface MovieInfo extends Movie {
+  genres: { id: number; name: string }[];
+  relese_Date: string;
 }
