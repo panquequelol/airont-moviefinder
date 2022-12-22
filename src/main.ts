@@ -6,8 +6,6 @@ const API_KEY = "8a05ce3666972d0438eebd9615a87a00";
 
 if (!localStorage.getItem("session")) console.log("not found");
 
-let page = 1;
-
 const relativePath = (
   window.location.pathname + window.location.search
 ).substring(1);
