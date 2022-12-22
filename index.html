@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header class="bg-blue-500 grid grid-cols-2 p-4 items-center gap-1">
+      <h1 class="header__title"><strong>MOVIE</strong>finder</h1>
+      <input
+        type="search"
+        name="search"
+        class="p-1 rounded-lg flex order-3 col-span-2"
+        placeholder="search movies"
+      />
+      <div class="flex justify-end gap-2 items-center">
+        <span>Log Out</span>
+        <svg
+          class="bg-gray-500 p-1.5 shrink-0 h-10 w-10 rounded-full"
+          width="24"
+          height="27"
+          viewBox="0 0 24 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.7667 14.9552C15.6203 14.9552 18.7443 11.8312 18.7443 7.97761C18.7443 4.12398 15.6203 1 11.7667 1C7.91308 1 4.7891 4.12398 4.7891 7.97761C4.7891 11.8312 7.91308 14.9552 11.7667 14.9552Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M22.5333 25.1043C20.9203 20.5414 16.6063 17.4907 11.7667 17.4907C6.92705 17.4907 2.61301 20.5414 1 25.1043"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </header>
+    <main>
+      <section style="display: none;" id="gallery-section" class="p-4 max-w-7xl mx-auto">
+        <div class="flex justify-between items-center">
+          <h3 class="text-2xl font-bold my-8">Most Watched Movies</h3>
+          <div class="hidden lg:flex">
+            <button id="three-cols-button">
+              <svg
+                width="58"
+                height="36"
+                viewBox="0 0 58 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="39" y="6" width="12" height="24" rx="2" fill="#D9D9D9"
+                ></rect>
+                <rect x="23" y="6" width="12" height="24" rx="2" fill="#D9D9D9"
+                ></rect>
+                <rect x="7" y="6" width="12" height="24" rx="2" fill="#D9D9D9"></rect>
+              </svg>
+            </button>
+            <button id="single-col-button">
+              <svg
+                width="59"
+                height="37"
+                viewBox="0 0 59 37"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="7" y="6.50812" width="45" height="24" rx="2" fill="#D9D9D9"
+                ></rect>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="grid gap-4" id="gallery">
+          
+        </ul>
+        <div id="gallery-loading-element">Loading...</div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
