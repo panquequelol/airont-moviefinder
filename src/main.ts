@@ -22,5 +22,5 @@ if (relativePath) {
   // show gallery section
   const gallerySectionElement = document.getElementById("gallery-section");
   gallerySectionElement!.style.display = "block";
-  buildGallery(API_KEY, page);
+  buildGallery(API_KEY);
 }
