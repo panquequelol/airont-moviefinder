@@ -18,6 +18,13 @@ To build for production, run the build command, it will output to /dist folder
 npm run build
 ```
 
+## To-do
+- [ ] Header
+- [x] Infinite scroll
+- [x] Movie detail page
+- [ ] Search
+
+
 ## Technologies
 - TypeScript bundling with Vite
 - Tailwind CSS
