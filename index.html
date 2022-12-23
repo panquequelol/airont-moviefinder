@@ -9,12 +9,12 @@
     <title>Vite + TS</title>
   </head>
   <body class="bg-black" style="font-family: 'Open Sans', sans-serif;">
-    <header class="bg-primary grid grid-cols-2 p-4 items-center gap-1">
-      <h1 class="text-xl font-semibold text-white"><strong class="font-extrabold">MOVIE</strong>finder</h1>
+    <header class="bg-primary grid grid-cols-2 md:grid-cols-3 py-4 px-4 md:px-32 items-center gap-1">
+      <a href="http://localhost:5173/"><h1 class="text-2xl font-semibold text-white"><strong class="font-extrabold">MOVIE</strong>finder</h1></a>
       <input
         type="search"
         name="search"
-        class="p-1 rounded-lg flex order-3 col-span-2"
+        class="p-1 rounded-lg flex order-3 md:order-none col-span-2 md:col-span-1"
         placeholder="search movies"
       />
       <div class="flex justify-end gap-2 items-center text-white">
@@ -47,7 +47,7 @@
     <main>
       <section style="display: none;" id="gallery-section" class="p-4 max-w-7xl mx-auto">
         <div class="flex justify-between items-center">
-          <h3 class="text-2xl font-bold my-8">Most Watched Movies</h3>
+          <h3 class="text-2xl font-bold my-8 text-white">Most Watched Movies</h3>
           <div class="hidden lg:flex">
             <button id="three-cols-button">
               <svg
